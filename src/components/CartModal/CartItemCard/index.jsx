@@ -5,6 +5,7 @@ export const CartItemCard = ({ product,setCartList,cartList }) => {
 
    const removeCarrinho = (product) =>{ 
       const filtered = cartList.filter((cartProduct) => cartProduct !== product);
+       localStorage.setItem("carrinho", JSON.stringify(filtered));
       setCartList(filtered);
       }
   

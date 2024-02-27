@@ -10,9 +10,11 @@ export const CartModal = ({ cartList,setOpen,setCartList }) => {
    }, 0);
 
    const ClearCarrinho = () =>{ 
+      localStorage.setItem("carrinho", JSON.stringify([]));
       setCartList([])
   }
 
+  
 
 
 

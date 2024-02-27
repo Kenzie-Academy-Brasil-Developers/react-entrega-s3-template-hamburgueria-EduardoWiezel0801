@@ -21,8 +21,23 @@ export const HomePage = () => {
       getProduts();
 
    })
+  
 
    const [cartList, setCartList] = useState([]);  
+
+   
+   useEffect(() => {
+   
+      const saveCartLocalS = localStorage.getItem("carrinho");
+  
+      
+      if (saveCartLocalS) {
+        const storageCartItems = JSON.parse(saveCartLocalS);
+        setCartList(storageCartItems);
+      }
+
+   },[]);
+
    const [open, setOpen] = useState(false); 
    
 
