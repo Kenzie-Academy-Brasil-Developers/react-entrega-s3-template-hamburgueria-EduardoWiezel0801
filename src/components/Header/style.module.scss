@@ -1,0 +1,42 @@
+.headerSection{
+    background-color: var(--color-gray-0) ;
+    max-width: 100rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-inline: 2rem;
+}
+
+
+.headerContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10rem;
+   
+
+}
+.headerForm{
+    display: flex;
+    gap: 1rem;
+    
+}
+@media (max-width: 500px){
+    .headerSection{
+        background-color: var(--color-gray-0);  
+        height: 15vh;
+        display: flex;   
+        flex-direction: row;
+        flex-wrap:wrap;
+
+       
+
+    }
+    .headerContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10rem;
+       
+    
+    }
+}
