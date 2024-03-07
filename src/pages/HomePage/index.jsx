@@ -4,7 +4,7 @@ import { Header } from "../../components/Header";
 import { ProductList } from "../../components/ProductList";
 import "../../styles/index.scss";
 import { api } from "../../services/api";
-import style from "../HomePage/style.module.scss"
+import style from "../HomePage/style.module.scss";
 
 export const HomePage = () => {
    const [productList, setProductList] = useState([]);
@@ -12,25 +12,18 @@ export const HomePage = () => {
       const getProduts = async () => {
          
          const {data}= await api.get("products");
-
-         
-
          setProductList(data);
          
       };
       getProduts();
-
    })
   
-
    const [cartList, setCartList] = useState([]);  
 
-   
    useEffect(() => {
    
       const saveCartLocalS = localStorage.getItem("carrinho");
   
-      
       if (saveCartLocalS) {
         const storageCartItems = JSON.parse(saveCartLocalS);
         setCartList(storageCartItems);
@@ -40,7 +33,6 @@ export const HomePage = () => {
 
    const [open, setOpen] = useState(false); 
    
-
    return (
       <>
          <Header setOpen = {setOpen}/>

@@ -1,5 +1,5 @@
 import { MdDelete } from "react-icons/md";
-import style from "../CartItemCard/style.module.scss"
+import style from "../CartItemCard/style.module.scss";
 
 export const CartItemCard = ({ product,setCartList,cartList }) => {
 
@@ -8,7 +8,6 @@ export const CartItemCard = ({ product,setCartList,cartList }) => {
        localStorage.setItem("carrinho", JSON.stringify(filtered));
       setCartList(filtered);
       }
-  
 
    return (
       <li className={style.cardList} >
@@ -19,7 +18,7 @@ export const CartItemCard = ({ product,setCartList,cartList }) => {
                <span className={style.valorCard}>{product.price.toLocaleString('pt-BR', { style: "currency", currency: "BRL"})}</span>
             </div>
          </div>
-         <button onClick={() => removeCarrinho(product)} aria-label="delete" title="Remover item">
+         <button className="buttonRemove" onClick={() => removeCarrinho(product)} aria-label="delete" title="Remover item">
             <MdDelete size={21} />
          </button>
       </li>

@@ -4,21 +4,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    
- 
-   
-
-
-
-
-
 }
 .cardListContent{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    
 }
 .nameValroContainer{
     display: flex;
@@ -35,7 +26,5 @@
     background-color: var(--color-gray-100);
     width: 3.4375rem;
     height: 3.3438rem;
-   
     border-radius: 10px;
-
 }

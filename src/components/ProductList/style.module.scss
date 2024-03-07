@@ -7,14 +7,13 @@
     padding: 5%;
     gap: 1rem;
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
     .productListContainer{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5%;
+    flex-wrap: nowrap;
     gap: 1rem;
+    position: relative;
     }
 }

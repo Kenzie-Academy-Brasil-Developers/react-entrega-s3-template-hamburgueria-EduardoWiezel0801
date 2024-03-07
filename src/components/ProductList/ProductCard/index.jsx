@@ -6,7 +6,6 @@ export const ProductCard = ({ product, setCartList, cartList }) => {
    
     const addCarrinho = (product) =>{ 
 
-        
         const filtered = cartList.find((cartProduct) => cartProduct.id === product.id) ;
         
         if(!filtered){  
@@ -15,12 +14,8 @@ export const ProductCard = ({ product, setCartList, cartList }) => {
             localStorage.setItem("carrinho", JSON.stringify(value));
 
         setCartList(value);
-
         }
     }
-
-    
-
     return(
         <li className="containerProdutItem">
             <img className="img" src={product.img} alt={product.name} />
