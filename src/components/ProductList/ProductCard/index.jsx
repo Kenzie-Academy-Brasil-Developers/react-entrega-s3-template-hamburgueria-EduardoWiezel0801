@@ -1,4 +1,4 @@
-import style from "../ProductCard/style.module.scss"
+import style from "../ProductCard/style.module.scss";
 
 
 

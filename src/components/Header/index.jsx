@@ -21,7 +21,7 @@ export const Header = ({setOpen}) => {
             </form>
             <button onClick={() => setOpen(true)} className={styles.headerButton} >
                 <MdShoppingCart size={21} />
-                <span>0</span>
+                <span className={styles.spanCarrinho}>0</span>
             </button>
          </div>
       </header>

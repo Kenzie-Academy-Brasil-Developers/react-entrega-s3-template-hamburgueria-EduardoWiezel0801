@@ -14,7 +14,7 @@ export const CartItemCard = ({ product,setCartList,cartList }) => {
          <div className={style.cardListContent} >
             <img className={style.imgCard} src={product.img} alt={product.name} />
             <div className={style.nameValroContainer}>
-               <h3>{product.name}</h3>
+               <h3 className={style.nameItem}>{product.name}</h3>
                <span className={style.valorCard}>{product.price.toLocaleString('pt-BR', { style: "currency", currency: "BRL"})}</span>
             </div>
          </div>

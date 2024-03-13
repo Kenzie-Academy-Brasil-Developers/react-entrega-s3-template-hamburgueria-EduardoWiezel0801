@@ -25,6 +25,27 @@
     border: none;
     color: var(--color-primary);
 }
+.headerButton{
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border: none;
+    color: #BDBDBD;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.spanCarrinho{
+    background-color: var(--color-primary);
+    color: var(--color-gray-0);
+    font-size: 10px;
+    padding: 0.1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom:70%;
+    left: 75%;
+
+}
 
 
 @media (max-width: 600px){
